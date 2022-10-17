@@ -1,5 +1,12 @@
-body{
-  width:100%
+* {
+  box-sizing: border-box; 
+}
+body {
+  font-family: 'campton', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .dropdown-toggle::after
 {
