@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Verify </title>
+</head>
+<body>
+    <div class="bg">
+       <div class="container">
+          <div class=" row col-lg-4 col-md-6 col-sm-12 text-center">
+              <div class="logo"><a href=""><img src="assets/logo.svg" alt="logo"></a></div>
+              <h5>Verify OTP</h5>
+              <p>Please enter 6-digit OTP sent on your registered mobile</p>
+         </div>
+         <div class="form-container row col-sm-8 col-md-6 col-lg-4   text-center">
+                <div class="col-2">
+                     <input type="text" class="otpinput input">
+                </div>
+                <div class="col-2">
+                      <input type="text" class="otpinput input">
+                </div>
+                <div class="col-2" >
+                      <input type="text" class="otpinput input">
+                </div>
+                <div class="col-2">
+                      <input type="text" class="otpinput input">
+                </div>
+                <div class="col-2">
+                      <input type="text" class="otpinput input">
+                </div>
+                <div class="col-2">
+                     <input type="text" class="otpinput input">
+                </div>
+         </div>  
+         <div class=" row col-lg-4 col-md-6 col-sm-12 text-center">
+               <p class="left mt-2" style="color:orangered" id="invalid"><i class="bi bi-exclamation-circle"></i>  Invalid OTP. Please check your code and try agian</p>
+               <a href="">Resend OTP</a>
+               <button type="button" class="btn button" id="submit" onclick="location.href = 'home.html'">Let's Go</button>
+         </div>
+         <script>
+            $(window).load(function() {
+            function ahref() {
+            $("#invalid").show();
+            };
+            setTimeout(function(){ ahref(); }, 3000);
+            })
+         </script>
+      </div>
+</div>
+</body>
+</html>

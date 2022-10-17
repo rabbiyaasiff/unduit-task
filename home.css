@@ -1,0 +1,63 @@
+body{
+  width:100%
+}
+.dropdown-toggle::after
+{
+  display:none !important;
+}
+.input 
+    {
+      font-size: smaller !important;
+      font-weight: lighter !important;
+      background-color: rgb(229, 226, 226) !important;
+      border: none;
+      border-radius: 100px;
+      margin-bottom: 10px;
+      width: 90%;
+      height: fit-content;
+      padding-left: 30px;
+      color:aliceblue
+  }
+  .input-icons
+  {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .cb{
+    position: absolute;
+    right: 10%;
+  }
+  button{
+    border: none;
+    background: none;
+    font-size: 13px !important;
+    margin-top: 7px !important;
+  }
+ .con
+ {
+  display:flex;
+  flex-flow: row nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height:100vh !important;
+  width: 100% !important;
+ }
+ .sidenav
+ {
+  background-color: rgb(51, 45, 56);
+ }
+ .img{
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+ }
+ img{
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+ }
+ td{
+  margin: 10px !important; 
+  padding: 10px !important;
+ }
